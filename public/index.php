@@ -18,10 +18,7 @@ try {
 }
 
 // Routing
-if (isset($update->channel_post)) {
-    // Leaving from channels
-    $api->leaveChat($update->channel_post->chat->id);
-} elseif (isset($update->message) && in_array($update->message->chat->type, ['group', 'supergroup'])) {
+if (isset($update->message) && in_array($update->message->chat->type, ['group', 'supergroup'])) {
     if(isset($update->message->new_chat_members)) {
         // Delete join message
         $api->deleteMessage($update->message->chat->id, $update->message->message_id);
