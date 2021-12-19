@@ -1,0 +1,16 @@
+{
+    "name": "kriptonuz/react-bot",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kriptonuz",
+            "email": "kripton253@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~8.0",
+        "ext-curl": "*",
+        "ext-mbstring": "*"
+    }
+}
